@@ -12,8 +12,9 @@ header {
     height: auto;
     text-align: center;
     float: left;
-    background-color: lightblue;
+    background-color: rgb(41, 71, 111);
     padding: 10px;
+    color: rgb(255, 255, 255);
 }
 
 header img {
@@ -24,7 +25,7 @@ nav {
     width: 100%;
     height: 25%;
     display: grid;
-    background-color: lightcoral;
+    background-color: black;
     justify-items: center;
 }
 
@@ -34,26 +35,66 @@ nav a {
     width: 6em;
     font-size: larger;
     text-align: center;
+    color: rgb(255, 255, 255)
 }
 
-nav a:hover,
-nav a::selection {
-    color: chartreuse;
+a {
+    color: blue;
+}
+
+a:hover,
+a::selection {
+    color: lightskyblue;
 }
 
 main {
     width: 90%;
     margin: auto;
-    color: red;
+    margin-bottom: 30px;
+    color: black;
     text-align: center;
     display: grid;
+    padding-top: 30px;
 }
 
 .card {
     display: grid;
+    margin-top: 30px;
+    outline: 3px solid lightgrey;
+    border-radius: 5px;
 
+}
+
+.card h3 {
+    background-color: rgb(41, 71, 111);
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+}
+
+.card p {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 ul {
     list-style: none;
+    text-align: left;
+    margin: 10px 15px;
+}
+
+footer {
+    margin-top: auto;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(41, 71, 111);
+    color: rgb(255, 255, 255)
+}
+
+#lastModified {
+    color: yellow;
 }
