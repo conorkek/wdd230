@@ -1,7 +1,6 @@
 @media screen and (min-width: 500px) {
-
     header {
-        background-color: black;
+        background-color: darkmagenta;
         color: white;
     }
 
@@ -9,4 +8,8 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
