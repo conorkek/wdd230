@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
     header {
         background-color: black;
@@ -18,7 +18,6 @@
     }
 
     .card {
-        padding: 10px;
         background-color: white;
     }
 }
