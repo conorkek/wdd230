@@ -1,15 +1,37 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
     header {
         background-color: darkmagenta;
         color: white;
     }
 
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        /* Two equal-width columns */
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+    .card h3 {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     nav {
         flex-direction: row;
         justify-content: center;
+    }
+
+    div {
+        grid-column: 1 / -1;
+        /* This makes the div span both columns */
+    }
+
+    .card {
+        display: grid;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        box-sizing: border-box;
+        align-items: start;
     }
 }
