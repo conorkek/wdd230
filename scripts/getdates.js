@@ -1,4 +1,1 @@
-// replaces "year" with current year
-document.getElementById("year").innerHTML = (new Date().getFullYear());
-
-document.getElementById("lastModified").innerHTML = "Last Modified: " + (new Date(document.lastModified));
+document.getElementById("year").innerHTML=(new Date().getFullYear());document.getElementById("lastModified").innerHTML="Last Modified: "+(new Date(document.lastModified));
