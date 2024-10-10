@@ -169,4 +169,5 @@ footer {
 .map {
     height: 450px;
     width: 100%;
+    border: none;
 }
