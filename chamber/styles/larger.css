@@ -1,0 +1,40 @@
+@media (min-width: 1025px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    main img {
+        grid-column: span 2;
+        height: 400px;
+        /* Adjust height as needed */
+    }
+
+    section.card {
+        grid-column: span 1;
+    }
+
+    .button {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+}
