@@ -71,6 +71,10 @@ footer {
     color: whitesmoke;
 }
 
+#lastModified {
+    color: #ffcc00;
+}
+
 #menu {
     font-size: 1.5rem;
     border: 0;
