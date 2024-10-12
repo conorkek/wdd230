@@ -7,10 +7,12 @@ header {
     width: 100%;
     height: auto;
     text-align: center;
-    float: left;
     background-color: rgb(41, 71, 111);
     color: rgb(255, 255, 255);
-    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 
 header img {
