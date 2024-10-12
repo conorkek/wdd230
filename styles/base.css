@@ -10,6 +10,7 @@ header {
     float: left;
     background-color: rgb(41, 71, 111);
     color: rgb(255, 255, 255);
+    padding: 0.5em;
 }
 
 header img {
@@ -19,9 +20,10 @@ header img {
 }
 
 header h1 {
-    margin: 25px;
     display: inline-block;
     vertical-align: middle;
+    margin: 10px;
+    padding: 1em;
 }
 
 nav {
@@ -109,13 +111,13 @@ footer {
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: 0;
     background: none;
     color: #fff;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.5em;
+    right: 0.5em;
 }
 
 #menu::before {
