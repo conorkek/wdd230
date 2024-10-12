@@ -14,9 +14,9 @@ footer {
     padding: 1em 0;
 }
 
-h1,
 h2 {
     font-family: 'Roboto';
+    background-color: #ffcc00;
 }
 
 section {
