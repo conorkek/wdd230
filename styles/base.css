@@ -18,13 +18,11 @@ header {
 
 header img {
     margin: 10px;
-    vertical-align: bottom;
     display: inline-block;
 }
 
 header h1 {
     display: inline-block;
-    vertical-align: middle;
     margin: 10px;
     padding: 0.5em;
 }
