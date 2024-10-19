@@ -80,13 +80,13 @@ footer {
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: 0;
     background: none;
     color: #ffcc00;
     position: absolute;
-    top: 0.5em;
-    right: 0.5em;
+    top: 10px;
+    right: 10px;
 }
 
 #menu::before {
@@ -135,4 +135,78 @@ footer {
     background-color: #bed;
     max-width: 580px;
     height: 100vh;
+}
+
+/* Night Mode */
+.switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffcc00;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: navy;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+label.switch {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    z-index: 10;
+}
+
+label.switch {
+    right: 60px;
+}
+
+#menu {
+    right: 10px;
 }
