@@ -57,4 +57,12 @@
     .map {
         grid-column: 1 / span 2;
     }
+
+    .hero-image {
+        max-width: 960px;
+    }
+    
+    .overlay {
+        font-size: 1.5rem;
+    }
 }

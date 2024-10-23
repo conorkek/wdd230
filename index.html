@@ -12,7 +12,7 @@
     <meta property="og:image"
         content="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/wps6ppy4blbtookai1xj/happy-thanksgiving-john-bathurst-1">
     <meta property="og:url" content="https://conorkek.github.io/wdd230/">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <img src="images/profile_pic.jpeg" alt="profile picture of Conor">
+        <img src="images/profile_pic.webp" alt="profile picture of Conor">
         <h1>Conor Kekauoha</h1>
     </header>
     <button id="menu" class></button>
@@ -38,6 +38,16 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p11-p13#p11"
             target="_blank">Scripture</a>
     </nav>
+    <div class="hero-container">
+        <picture>
+            <!-- Mobile image -->
+            <source srcset="images/los-angeles-temple-small.webp" media="(max-width: 600px)">
+            <!-- Larger view image -->
+            <source srcset="images/los-angeles-temple-larger.webp" media="(min-width: 601px)">
+            <img src="images/los-angeles-temple.webp" alt="Los Angeles Temple" class="hero-image">
+        </picture>
+        <div class="overlay">Los Angeles Temple</div>
+    </div>
     <main>
         <div>
             <h2>WDD 230: Web Frontend Development</h2>
@@ -68,7 +78,8 @@
                     05: <a href="lesson05/bom.html" target="_blank">BoM Favorite Chapters</a>
                 </li>
                 <li>
-                    06: <a href="lesson06/images/landscape.webp">WebP</a> | <a href="lesson06/responsize-images.html">Responsive Images</a>
+                    06: <a href="lesson06/images/landscape.webp">WebP</a> | <a
+                        href="lesson06/responsize-images.html">Responsive Images</a>
                 </li>
                 <li>
                     07: <a href=""></a>
