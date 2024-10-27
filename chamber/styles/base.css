@@ -36,6 +36,7 @@ main {
 main img {
     width: 100%;
     height: auto;
+    max-width: 100%;
     z-index: -1;
     position: relative;
 }
@@ -193,7 +194,7 @@ input:checked+.slider:before {
 
 .dark-mode {
     background-color: #000;
-    color: #fff;
+    color: black;
 }
 
 label.switch {

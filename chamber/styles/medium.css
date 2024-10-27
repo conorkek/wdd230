@@ -7,8 +7,9 @@
 
     main img {
         grid-column: span 2;
-        height: 300px;
-        /* Adjust height as needed */
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 
     section.card {
