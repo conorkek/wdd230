@@ -44,8 +44,8 @@
             <source srcset="images/los-angeles-temple-small.webp" media="(max-width: 600px)">
             <!-- Larger view image -->
             <source srcset="images/los-angeles-temple-larger.webp" media="(min-width: 601px)">
-            <img src="images/los-angeles-temple.webp" alt="Los Angeles Temple" class="hero-image"
-                media="(min-width: 901px)">
+            <img src="images/los-angeles-temple.webp" alt="Los Angeles Temple" width="600" height="400"
+                class="hero-image" media="(min-width: 901px)">
         </picture>
         <div class="overlay">Los Angeles Temple</div>
     </div>
@@ -101,10 +101,11 @@
         <section class="card">
             <h3>Information</h3>
             <p>Weather is:</p>
-            <p>Number of visits to page:</p>
+            <p>Number of visits to page: <span id="visitCounter">0</span></p>
         </section>
         <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26496.05005913012!2d-118.42174214482833!3d33.889492685963795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3c5e2b0632f%3A0x70351d4f4154520!2sManhattan%20Beach%2C%20CA%2090266!5e0!3m2!1sen!2sus!4v1727924375615!5m2!1sen!2sus"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26496.05005913012!2d-118.42174214482833!3d33.889492685963795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3c5e2b0632f%3A0x70351d4f4154520!2sManhattan%20Beach%2C%20CA%2090266!5e0!3m2!1sen!2sus!4v1727924375615!5m2!1sen!2sus"
+            loading="lazy"></iframe>
     </main>
     <footer>
         <p>
@@ -114,6 +115,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 
 </html>
