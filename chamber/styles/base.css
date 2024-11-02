@@ -198,7 +198,8 @@ input:checked+.slider:before {
 }
 
 .dark-mode #sidebar {
-    background-color: #454545; /* Even darker shade for sidebar */
+    background-color: #454545;
+    /* Even darker shade for sidebar */
     color: #fff;
 }
 
@@ -250,7 +251,8 @@ nav a {
 /* Main Layout */
 main {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr;
+    /* Single column by default */
 }
 
 #sidebar {
@@ -260,7 +262,8 @@ main {
 
 #gallery {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr;
+    /* Single column by default */
     gap: 10px;
 }
 
@@ -314,11 +317,11 @@ footer {
     transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: navy;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
 }
 
