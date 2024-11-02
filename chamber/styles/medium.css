@@ -38,4 +38,17 @@
     .stuff {
         margin: 1rem auto;
     }
+
+    /* Discover page css */
+    main {
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns for images */
+        width: 95%;
+    }
+
 }

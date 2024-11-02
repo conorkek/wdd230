@@ -42,4 +42,11 @@
     #gallery img:hover {
         transform: scale(1.05);
     }
+
+    #gallery {
+        justify-items: center;
+        align-content: center;
+        width: 95%;
+        /* Three columns for images */
+    }
 }
