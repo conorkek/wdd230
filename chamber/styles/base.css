@@ -194,7 +194,7 @@ input:checked+.slider:before {
 
 .dark-mode {
     background-color: #000;
-    color: black;
+    color: white;
 }
 
 label.switch {
@@ -210,4 +210,8 @@ label.switch {
 
 #menu {
     right: 10px;
+}
+
+#gallery img {
+    transition: transform 0.3s ease;
 }
