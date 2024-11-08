@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #4CAF50;
+    --input-padding: 10px;
+    --font-size: 1rem;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: var(--font-size);
+}
+
+input,
+button {
+    width: 93.5%;
+    padding: var(--input-padding);
+    margin-top: 5px;
+    font-size: var(--font-size);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--input-padding);
+    cursor: pointer;
+    font-size: var(--font-size);
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.range-container {
+    display: flex;
+    align-items: center;
+}
+
+#ratingValue {
+    font-weight: bold;
+    margin-left: 10px;
+}
