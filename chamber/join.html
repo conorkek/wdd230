@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Conor Kekauoha - WDD 230 - Web Frontend Development - This page is for an assignment">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Conor Kekauoha">
+    <meta property="og:title" content="Conor Kekauoha's website for WDD-230">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/wps6ppy4blbtookai1xj/happy-thanksgiving-john-bathurst-1">
+    <meta property="og:url" content="https://conorkek.github.io/wdd230/">
+    <link rel="icon" href="../images/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Conor Kekauoha - WDD 230 - Web Frontend Development</title>
+</head>
+
+<body>
+    <header>
+        <h1>Manhattan Beach Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu" class></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <main class="main">
+        <form id="membership-form" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Membership Form</legend>
+
+                <label for="first-name">First Name:
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+
+                <label for="last-name">Last Name:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" required
+                        title="Only letters, spaces, and hyphens. Minimum 7 characters.">
+                </label>
+
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </label>
+
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+
+                <label for="organization">Organization Name:
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+
+                <label for="membership-level">Membership Level:
+                    <select id="membership-level" name="membership-level" required>
+                        <option value="NP">NP Membership (Non-Profit, Free)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Organization Description:
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit">Join the Chamber of Commerce</button>
+            </fieldset>
+        </form>
+
+        <aside id="membership-info">
+            <section>
+                <h2>Membership Levels</h2>
+                <ul>
+                    <li><strong>NP Membership:</strong> Access to events, training sessions (Free).</li>
+                    <li><strong>Bronze Membership:</strong> Discounts on events, advertising opportunities.</li>
+                    <li><strong>Silver Membership:</strong> Includes Bronze benefits + feature in newsletters.</li>
+                    <li><strong>Gold Membership:</strong> All benefits + priority support and homepage spotlight.</li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>
+            © <span id="year">year</span> Conor Kekauoha | California 🇺🇸
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visitCounter.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const timestampField = document.getElementById("timestamp");
+            if (timestampField) {
+                timestampField.value = Date.now();
+            }
+        });
+    </script>
+</body>
+
+</html>

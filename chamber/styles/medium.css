@@ -51,4 +51,8 @@
         width: 95%;
     }
 
+    .main {
+        grid-template-columns: 2fr 1fr;
+        /* Two columns: Form takes more space */
+    }
 }

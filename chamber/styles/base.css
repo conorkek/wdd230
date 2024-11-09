@@ -334,3 +334,83 @@ input:checked+.slider:before {
 aside#sidebar section {
     margin-bottom: 20px;
 }
+
+/* Join page */
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+form {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+aside#membership-info {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0055aa;
+}
+
+/* Dark Mode Styling for Forms */
+.dark-mode form {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark-mode form input,
+.dark-mode form select,
+.dark-mode form textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark-mode form input::placeholder,
+.dark-mode form textarea::placeholder {
+    color: #bbb;
+}
+
+.dark-mode form button {
+    background-color: #0055aa;
+    color: #fff;
+}
+
+.dark-mode form button:hover {
+    background-color: #003366;
+}
+
+.dark-mode form label {
+    color: #fff;
+}
+
+.dark-mode #membership-info {
+    background-color: #333;
+}
+
+.dark-mode aside h2,
+.dark-mode aside ul,
+.dark-mode aside li {
+    background-color: #333;
+    color: #fff;
+}

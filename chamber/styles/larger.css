@@ -55,4 +55,9 @@
         transform: scale(1.05);
         /* Confirm scaling effect */
     }
+
+    .main {
+        grid-template-columns: 2fr 1fr;
+        /* Two columns: Form takes more space */
+    }
 }
