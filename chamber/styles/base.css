@@ -219,24 +219,6 @@ label.switch {
 }
 
 /* Discover page css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 10px;
-    background-color: #003366;
-    color: whitesmoke;
-}
-
 header h1 {
     margin: 10px;
     padding: 1em;
@@ -248,11 +230,9 @@ nav a {
     color: #333;
 }
 
-/* Main Layout */
 main {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column by default */
 }
 
 #sidebar {
@@ -263,14 +243,7 @@ main {
 #gallery {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column by default */
     gap: 10px;
-}
-
-#gallery img {
-    transition: transform 0.3s ease;
-    width: 100%;
-    height: auto;
 }
 
 /* Footer */

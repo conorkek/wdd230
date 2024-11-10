@@ -39,21 +39,14 @@
         margin: 1rem auto;
     }
 
-    #gallery img:hover {
-        transform: scale(1.05);
+    #gallery:hover {
+        transform: scale(1);
     }
 
     #gallery {
         justify-items: center;
         align-content: center;
         width: 95%;
-        transition: transform 0.3s ease-in-out;
-        /* Three columns for images */
-    }
-
-    #gallery img:hover {
-        transform: scale(1.05);
-        /* Confirm scaling effect */
     }
 
     .main {

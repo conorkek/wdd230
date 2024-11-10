@@ -45,6 +45,11 @@
         gap: 20px;
     }
 
+    #gallery img:hover {
+        transform: scale(1.05);
+        border: 2px solid red;
+    }
+
     #gallery {
         grid-template-columns: 1fr 1fr;
         /* Two columns for images */
