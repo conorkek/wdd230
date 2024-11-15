@@ -24,6 +24,14 @@
                 {
                     "url": "lesson03/images/w3schools-exercise.png",
                     "title": "Combinator Exercise"
+                },
+                {
+                    "url": "https://codepen.io/conorkek/pen/mdNeYgW",
+                    "title": "CodePen CSS Psuedo Elements Activity"
+                },
+                {
+                    "url": "https://codepen.io/conorkek/pen/YzmwaMY",
+                    "title": "CodePen Hamburger"
                 }
             ]
         },
