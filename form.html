@@ -42,21 +42,25 @@
         <form action="record.html" method="get">
             <!-- Username Field -->
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Johndoe" required>
+            <input type="text" id="username" name="username" placeholder="Enter your username (e.g., johndoe123)"
+                required>
 
             <!-- Password Field -->
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="At least 8 alphanumeric characters"
+                required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 alphanumeric characters.">
 
             <!-- Confirm Password Field -->
             <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="confirm_password" name="confirm_password" required
-                oninput="checkPasswordMatch()">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter your password"
+                required oninput="checkPasswordMatch()">
 
             <!-- Email Field -->
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="someone@byui.edu"
-                title="A valid byui.edu email address." required>
+            <input type="email" id="email" name="email" placeholder="BYU-Idaho email (someone@byui.edu)" required
+                pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                title="Please enter a valid BYU-Idaho email address (e.g., someone@byui.edu).">
+
 
             <!-- Page Rating Field -->
             <label for="rating">Page Rating</label>
@@ -70,24 +74,6 @@
             <button type="submit">Enter Username and Password Into Database</button>
         </form>
     </main>
-    <script>
-        // Function to check password match
-        function checkPasswordMatch() {
-            const password = document.getElementById('password');
-            const confirmPassword = document.getElementById('confirm_password');
-            if (password.value !== confirmPassword.value) {
-                confirmPassword.setCustomValidity("Passwords do not match.");
-                confirmPassword.reportValidity();
-            } else {
-                confirmPassword.setCustomValidity("");
-            }
-        }
-
-        // Function to display range value
-        function showRatingValue(value) {
-            document.getElementById('ratingValue').textContent = value;
-        }
-    </script>
     <footer>
         <p>
             © <span id="year">year</span> Conor Kekauoha | California 🇺🇸
@@ -97,6 +83,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/visitCounter.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
