@@ -387,3 +387,27 @@ button[type="submit"]:hover {
     background-color: #333;
     color: #fff;
 }
+
+/* Grid View */
+#members-container.grid .member-card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* List View */
+#members-container.list .member-card {
+    display: block;
+    width: 100%;
+    margin: 1% 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+}

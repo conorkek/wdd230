@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Tabula Rasa Essentials",
+        "address": "919 Manhattan Ave, Manhattan Beach, CA 90266",
+        "phone": "(310) 318-3385",
+        "website": "https://www.tabularasaessentials.com/",
+        "image": "",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Sloopy's Beach Café",
+        "address": "3416 Highland Ave, Manhattan Beach, CA 90266",
+        "phone": "(310) 545-1373",
+        "website": "https://www.sloopys.com/",
+        "image": "",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Kinecta Federal Credit Union",
+        "address": "1440 Rosecrans Ave, Manhattan Beach, CA 90266",
+        "phone": "(800) 854-9846",
+        "website": "https://www.kinecta.org/",
+        "image": "",
+        "membershipLevel": "Platinum"
+    },
+    {
+        "name": "The Belamar Hotel",
+        "address": "3501 N Sepulveda Blvd, Manhattan Beach, CA 90266",
+        "phone": "(310) 750-0300",
+        "website": "https://www.thebelamar.com/",
+        "image": "",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Manhattan Beach Toyota",
+        "address": "1500 N Sepulveda Blvd, Manhattan Beach, CA 90266",
+        "phone": "(310) 546-4848",
+        "website": "https://www.manhattanbeachtoyota.com/",
+        "image": "",
+        "membershipLevel": "Platinum"
+    },
+    {
+        "name": "Chevron Products Company",
+        "address": "324 W El Segundo Blvd, El Segundo, CA 90245",
+        "phone": "(310) 615-5000",
+        "website": "https://www.chevron.com/",
+        "image": "",
+        "membershipLevel": "Platinum"
+    },
+    {
+        "name": "Skechers USA, Inc.",
+        "address": "330 S Sepulveda Blvd, Manhattan Beach, CA 90266",
+        "phone": "(310) 318-3100",
+        "website": "https://www.skechers.com/",
+        "image": "",
+        "membershipLevel": "Platinum"
+    }
+]

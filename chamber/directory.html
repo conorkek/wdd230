@@ -36,48 +36,16 @@
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
+            <a href="#">Directory</a>
             <a href="join.html">Join</a>
         </nav>
     </header>
     <main>
-        <!-- <img src="images/manhattan-beach-image.jpeg" alt="Picture of the Manhattan Beach Pier at sunset"> -->
-        <img src="images/wdd230-org-large.webp"
-            srcset="images/wdd230-org-small.webp 600w, images/wdd230-org-medium.webp 1024w, images/wdd230-org-large.webp 1400w"
-            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 100vw"
-            alt="Picture of coworkers sitting at a table">
-        <div class="button">
-            <a href="#">Join the Chamber</a>
+        <div id="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
         </div>
-        <section class="card">
-            <h2>Current Events</h2>
-            <p>🎃 Halloween is coming on the 31st of October! 🎃</p>
-        </section>
-        <section class="card">
-            <h2>Weather</h2>
-            <p>Temperature: <span id="temp">35</span>°F</p>
-            <p>Wind Speed: <span id="windSpeed">15</span> mph</p>
-            <p id="windChill">Wind Chill: Calculating...</p>
-        </section>
-        <section class="card">
-            <h2>Spotlight</h2>
-            <p><a href="https://conorkek.github.io/wdd130/kekauoha-music/index.html" target="_blank">Conor Kekauoha's
-                    Music Lessons</a>
-            </p>
-        </section>
-        <section class="card">
-            <h2>Spotlight</h2>
-            <p>Conor Kekauoha's Music Socials</p>
-            <ul>
-                <li>
-                    Instagram: <a href="https://www.instagram.com/conorkekauohamusic/"
-                        target="_blank">@conorkekauohamusic</a>
-                </li>
-                <li>
-                    Tiktok: <a href="https://www.tiktok.com/@conorkek" target="_blank">@conorkek</a>
-                </li>
-            </ul>
-        </section>
+        <div id="members-container" class="grid"></div>
     </main>
     <footer>
         <p>&copy; <span id="year">year</span> Manhattan Beach Chamber of Commerce</p>
@@ -91,6 +59,7 @@
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>
