@@ -61,8 +61,15 @@
     .hero-image {
         max-width: 90%;
     }
-    
+
     .overlay {
         font-size: 1.5rem;
+    }
+
+    .weather-info {
+        justify-content: center;
+        /* Center items on larger screens */
+        gap: 20px;
+        /* Larger gap on bigger screens */
     }
 }

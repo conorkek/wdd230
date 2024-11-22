@@ -198,3 +198,21 @@ footer {
     font-size: 1rem;
     white-space: nowrap;
 }
+
+/* Weather */
+.weather-info {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: flex-start; /* Align horizontally */
+    gap: 10px; /* Spacing between items */
+}
+
+.weather-info p {
+    margin: 0; /* Remove margin to align better */
+    padding-right: 10px; /* Space before the icon */
+}
+
+#weather-icon {
+    width: 50px; /* Smaller icon size */
+    height: 50px;
+}
