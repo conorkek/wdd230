@@ -57,6 +57,29 @@
 
     .main {
         grid-template-columns: 2fr 1fr;
-        /* Two columns: Form takes more space */
+    }
+
+    #members-container.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #members-container.list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #members-container.list .member-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    #members-container.list .member-card img {
+        margin-right: 15px;
     }
 }
