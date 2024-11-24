@@ -76,4 +76,36 @@
     #members-container.list .member-card img {
         margin-right: 20px;
     }
+    #members-container.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /* List View */
+    #members-container.list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #members-container.list .member-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        text-align: left;
+    }
+
+    #members-container.list .member-card img {
+        margin-right: 20px;
+    }
+
+    #members-container.list .member-card:nth-child(even) {
+        background-color: #e9ecef;
+    }
+
+    nav {
+        flex-direction: row;
+    }
 }
