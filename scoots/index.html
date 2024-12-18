@@ -49,9 +49,22 @@
                 <a href="reservations.html" class="hero-button">Reserve Now</a>
             </div>
         </section>
-        <section id="weather">
-            <h3>Current Weather</h3>
-            <div id="weather-info"></div>
+        <section class="weather">
+            <h2>Current Weather in Cozumel</h2>
+            <div class="weather-card">
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Weather Icon" />
+                    <div>
+                        <p id="weather-title">Loading...</p>
+                        <p id="weather-description">Please wait...</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <p>Current Temp: <span id="current-temp">--°C</span></p>
+                    <p>Humidity: <span id="humidity">--%</span></p>
+                    <p>Tomorrow at 3 PM: <span id="forecast-temp">--°C</span></p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

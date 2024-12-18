@@ -268,3 +268,58 @@ iframe {
 .hero-button:hover {
     background-color: #005f73;
 }
+
+/* Weather Section */
+.weather {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.weather h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 400px;
+    margin: auto;
+    color: #333;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-main img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-main p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.weather-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.weather-details span {
+    font-weight: bold;
+    color: #007399;
+    /* Highlight important values */
+}
