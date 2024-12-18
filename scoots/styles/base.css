@@ -200,3 +200,15 @@ ul li {
     font-weight: bold;
     margin-left: 5px;
 }
+
+/* Map Container */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+iframe {
+    border-radius: 10px;
+}
