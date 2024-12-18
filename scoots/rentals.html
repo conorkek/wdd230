@@ -3,16 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Final Project - Scoots Rentals">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Scoots~ Rentals</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <meta name="author" content="Conor Kekauoha">
+    <meta property="og:title" content="Conor Kekauoha's Final Project for WDD-230">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/wps6ppy4blbtookai1xj/happy-thanksgiving-john-bathurst-1">
+    <meta property="og:url" content="https://conorkek.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
     <header>
         <h1>~Scoots~ Rentals</h1>
-        <nav>
+        <!-- Hamburger Menu -->
+        <div id="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav id="nav-menu" class="hidden">
             <a href="index.html">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservations.html">Reservations</a>
@@ -22,12 +39,15 @@
     <main>
         <section>
             <h2>Our Rentals</h2>
-            <div id="rentals-table"></div>
+            <div id="rentals-container"></div>
         </section>
     </main>
     <footer>
         <p>Explore Cozumel your way!</p>
+        <p>Follow us: [Social Media Links]</p>
     </footer>
+    <script src="scripts/rentals.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,52 @@
+{
+    "rentals": [
+        {
+            "type": "Honda Dio Scooter",
+            "cc": "110cc",
+            "seats": 2,
+            "half_day": 30,
+            "full_day": 40,
+            "image": "images/dio.webp"
+        },
+        {
+            "type": "Honda Metropolitan",
+            "cc": "49cc",
+            "seats": 1,
+            "half_day": 20,
+            "full_day": 30,
+            "image": "images/metropolitan.webp"
+        },
+        {
+            "type": "Honda PCX150",
+            "cc": "149cc",
+            "seats": 2,
+            "half_day": 40,
+            "full_day": 50,
+            "image": "images/pcx150.webp"
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "cc": "1000cc",
+            "seats": 4,
+            "half_day": 50,
+            "full_day": 70,
+            "image": "images/pioneer-1000.webp"
+        },
+        {
+            "type": "Jeep Wrangler 2-Door",
+            "cc": "Manual",
+            "seats": 4,
+            "half_day": 60,
+            "full_day": 85,
+            "image": "images/wrangler-2door.webp"
+        },
+        {
+            "type": "Jeep Wrangler 4-Door",
+            "cc": "Manual with A/C",
+            "seats": 5,
+            "half_day": 70,
+            "full_day": 100,
+            "image": "images/wrangler-4door.webp"
+        }
+    ]
+}

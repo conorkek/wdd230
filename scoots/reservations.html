@@ -3,39 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Final Project - Scoots Reservations">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Scoots~ Reservations</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="author" content="Conor Kekauoha">
+    <meta property="og:title" content="Conor Kekauoha's Final Project for WDD-230">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/wps6ppy4blbtookai1xj/happy-thanksgiving-john-bathurst-1">
+    <meta property="og:url" content="https://conorkek.github.io/wdd230/">
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
     <header>
         <h1>~Scoots~ Reservations</h1>
-        <nav>
+        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-menu" class="hidden">
             <a href="index.html">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservations.html">Reservations</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main>
         <section>
-            <h2>Make a Reservation</h2>
-            <form id="reservation-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="rental-type">Rental Type:</label>
-                <select id="rental-type" name="rental-type">
-                    <option value="scooter">Scooter</option>
-                    <option value="atv">ATV</option>
-                    <option value="jeep">Jeep</option>
-                </select>
-                <button type="submit">Reserve</button>
+            <h2>Rental Agreement</h2>
+            <p>By completing this form, you agree to our rental terms:</p>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid driver’s license must be shown at the time of rental.</li>
+                <li>No passengers under 12 years old are allowed on scooters.</li>
+                <li>Fuel charges are not included in the rental price.</li>
+                <li>Unlimited mileage is included in all rentals.</li>
+                <li>Liability insurance is included; damage insurance is available for purchase.</li>
+                <li>Free delivery is available to Cozumel hotels or Airbnbs for rentals of 2+ days.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Reserve Your Rental</h2>
+            <form id="reservation-form" novalidate>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="name">Name: <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number: <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890"
+                            pattern="^\\(\\d{3}\\) \\d{3}-\\d{4}$" required>
+                        <small>Format: (123) 456-7890</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="rental-type">Rental Type: <span class="required">*</span></label>
+                        <select id="rental-type" name="rental-type" required>
+                            <option value="" disabled selected>Select Rental Type</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="atv">ATV</option>
+                            <option value="jeep">Jeep</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date: <span class="required">*</span></label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="period">Rental Period: <span class="required">*</span></label>
+                        <select id="period" name="period" required>
+                            <option value="" disabled selected>Select Period</option>
+                            <option value="half-day">Half Day</option>
+                            <option value="full-day">Full Day</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="home-state">Home State/Country: <span class="required">*</span></label>
+                        <input type="text" id="home-state" name="home-state" placeholder="California, USA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Special Accommodations/Drop-off Requests:</label>
+                        <textarea id="comments" name="comments" rows="4"
+                            placeholder="Specify drop-off location or special needs"></textarea>
+                    </div>
+                    <button type="submit">Reserve Now</button>
+                </div>
             </form>
         </section>
     </main>
+
+    <footer>
+        <p>Explore Cozumel your way!</p>
+    </footer>
+
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
