@@ -218,7 +218,6 @@ iframe {
     position: relative;
     width: 100%;
     height: auto;
-    /* Allow the image to scale naturally */
     display: flex;
     align-items: flex-start;
     /* Align content at the top */
@@ -230,19 +229,16 @@ iframe {
 .hero-image {
     width: 100%;
     height: auto;
-    /* Ensures full visibility of the image */
     object-fit: cover;
 }
 
 .hero-content {
     position: absolute;
     top: 20%;
-    /* Move the content higher */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent dark overlay */
     padding: 10px 15px;
     border-radius: 8px;
     color: #fff;
@@ -321,5 +317,64 @@ iframe {
 .weather-details span {
     font-weight: bold;
     color: #007399;
-    /* Highlight important values */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info ul {
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-info ul li {
+    margin: 5px 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footer-info a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-back a {
+    display: inline-block;
+    color: #fff;
+    background-color: #007399;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer-back a:hover {
+    background-color: #005f73;
 }
