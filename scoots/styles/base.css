@@ -140,10 +140,12 @@ nav.show {
 /* Form and Grid Layout */
 .form-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-    max-width: 800px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .form-group {
@@ -169,7 +171,7 @@ textarea {
 }
 
 button {
-    grid-column: span 2;
+    grid-column: span 1;
     padding: 10px;
     background-color: #007399;
     color: white;
@@ -213,51 +215,53 @@ iframe {
     border-radius: 10px;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
+    /* Ensures content positions relative to the image */
     width: 100%;
-    height: auto;
-    display: flex;
-    align-items: flex-start;
-    /* Align content at the top */
-    justify-content: center;
-    text-align: center;
+    height: 300px;
+    /* Fixed height for the hero section */
     overflow: hidden;
+    /* Prevents any overflow */
 }
 
-.hero-image {
+.hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    /* Ensures the image fits while maintaining aspect ratio */
 }
 
 .hero-content {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: #fff;
+    /* Center the message */
     text-align: center;
+    color: #fff;
+    /* White text for contrast */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    padding: 1rem;
+    border-radius: 8px;
+    width: 90%;
+    /* Prevents the message from being too wide */
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    /* Default font size for mobile */
 }
 
-.hero-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
+/* Button Styling */
 .hero-button {
     display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.5rem;
     background-color: #007399;
     color: #fff;
-    padding: 8px 15px;
     text-decoration: none;
-    font-size: 1rem;
     border-radius: 5px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 

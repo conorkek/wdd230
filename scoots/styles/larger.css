@@ -87,4 +87,16 @@
         justify-content: space-between;
         padding: 0 2rem;
     }
+
+    .form-container {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns for larger screens */
+        max-width: 800px;
+        /* Restrict width for better spacing */
+    }
+
+    button {
+        grid-column: span 2;
+        /* Button spans both columns */
+    }
 }
