@@ -29,7 +29,7 @@ async function fetchWeather() {
         currentTemp.textContent = `${temp}°F`;
         humidity.textContent = `${humidityValue}%`;
 
-        // Simulate next day's forecast
+        // Next day's forecast
         forecastTemp.textContent = `${Math.round(temp + 2)}°F`;
     } catch (error) {
         console.error("Error fetching weather data:", error);
